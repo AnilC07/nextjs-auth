@@ -1,7 +1,7 @@
 const PHASE_DEVELOPMENT_SERVER = require("next/constants");
 
 module.exports = (phase) => {
-  if (!PHASE_DEVELOPMENT_SERVER) {
+  if (phase != PHASE_DEVELOPMENT_SERVER) {
     return {
       env: {
         mongodb_username: "anilcelik075",
