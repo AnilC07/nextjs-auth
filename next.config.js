@@ -19,7 +19,7 @@ module.exports = (phase) => {
         mongodb_password: "x4NfcEB6mz5BZGeE",
         mongodb_clusterName: "cluster0",
         mongodb_database: "auth",
-        NEXTAUTH_SECRET:thequickbrownfox,
+        NEXTAUTH_SECRET:'thequickbrownfox',
         NEXTAUTH_URL:'https://nextjs-auth-cgi.vercel.app/auth'
       },
     };
