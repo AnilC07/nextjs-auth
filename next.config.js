@@ -23,7 +23,6 @@ module.exports = (phase) => {
       mongodb_clusterName: "cluster0",
       mongodb_database: "auth-prod",
       NEXTAUTH_SECRET: "thequickbrownfox",
-      NEXTAUTH_URL: "https://nextjs-auth-cgi.vercel.app/auth",
     },
   };
 };
