@@ -1,9 +1,10 @@
-const phase_development_server = require("next/constants");
+
+const { PHASE_DEVELOPMENT_SERVER } = require('next/constants');
 
 
 module.exports = (phase) => {
-  console.log(phase);
-  if (phase == phase_development_server) {
+
+  if (phase === PHASE_DEVELOPMENT_SERVER) {
     return {
       env: {
         mongodb_username: "anilcelik075",
