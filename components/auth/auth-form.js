@@ -55,7 +55,6 @@ function AuthForm() {
         email: enteredEmail,
         password: enteredPassword,
       });
-      console.log(result)
 
       // If error is null === false, redirect to '/profile'
       if (!result.error) {
@@ -65,9 +64,9 @@ function AuthForm() {
     } else {
       try {
         const result = await createUser(enteredEmail, enteredPassword);
-        // console.log(result);
+
       } catch (error) {
-        // console.log(error);
+
       }
     }
   }

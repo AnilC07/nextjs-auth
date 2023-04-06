@@ -7,24 +7,17 @@ async function handler(req, res) {
   if (req.method !== "PATCH") {
     return;
   }
-  console.log(authOptions);
 
   const session = await getServerSession(req, res, authOptions);
-
-  console.log({session});
 
   if (!session) {
     res.status(401).json({ message: "Not authenticated!" });
     return;
   }
 
-  console.log(req.body);
-
   const userEmail = session.user.email;
   const oldPassword = req.body.oldPassword;
   const newPassword = req.body.newPassword;
-
-  console.log({ oldPassword, newPassword });
 
   const client = await connectToDB();
 
