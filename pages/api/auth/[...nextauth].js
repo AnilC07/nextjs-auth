@@ -7,7 +7,7 @@ import Credentials from "next-auth/providers/credentials";
 
 
 export const authOptions = {
-  secret: 'thequickbrownfox',
+  secret: process.env.NEXTAUTH_SECRET,
   session: {
     jwt: true,
   },
