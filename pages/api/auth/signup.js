@@ -12,6 +12,8 @@ async function handler(req, res) {
 
   const { email, password } = data;
 
+  console.log({data})
+
   // Server side check
   if (
     !email ||

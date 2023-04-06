@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
 function AuthPage() {
+
+  console.log(`mongodb+srv://${process.env.mongodb_username}:${process.env.mongodb_password}@${process.env.mongodb_clusterName}.b3tjvwe.mongodb.net/${process.env.mongodb_database}`)
   const [isLoading, setIsLoading] = useState(true);
   const router = useRouter();
   useEffect(() => {
